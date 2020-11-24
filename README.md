@@ -14,21 +14,12 @@ Authors
 
 Abstract
 --------
-Recent studies show that the vigorous seasonal cycle of the mixed layer modulates 
-upper-ocean submesoscale turbulence. 
-Here we provide model-based evidence that the seasonally-changing upper-ocean 
-stratification in the Kuroshio Extension also modulates submesoscale (here 10-100 km) 
-inertia-gravity waves. Summertime re-stratification weakens submesoscale 
-turbulence but enhances inertia-gravity waves near the surface. Thus, 
-submesoscale turbulence and inertia-gravity waves undergo vigorous out-of-phase 
-seasonal cycles. These results imply a strong seasonal modulation of 
-the accuracy of geostrophic velocity diagnosed from submesoscale 
-sea-surface height delivered by the Surface Water and Ocean Topography (SWOT) 
-satellite mission.
+In-situ sensors for environmental chemistry promise more thorough observations, which are necessary for high-confidence predictions in earth systems science. However, these can be a challenge to interpret, because the sensors are strongly influenced by temperature, humidity, pressure, or other secondary environmental conditions that are not of direct interest. We present a comparison of two statistical learning methods - a Generalized Additive Model, and a Long-Short Term Memory (LSTM) Neural Network model for bias correction of in-situ sensor data. We discuss their performance and tradeoffs, when the two bias correction methods are applied to data from submersible and shipboard mass spectrometers. Both instruments measure the most abundant gases dissolved in water, and can be used to reconstruct biochemical metabolisms, including those that regulate atmospheric carbon dioxide. Both models demonstrate a high degree of skill at correcting for instrument bias using correlated environmental measurements; the difference in their respective performance is less than 1% in terms of root mean squared error. Overall the LSTM bias correction produced an error of 5% for O2 and 8.5% for CO2, when compared against independent membrane DO and laser spectrometer instruments. This represents a predictive accuracy of 92-95% for both gases. It is apparent that the most important factor in a skillful bias correction is the measurement of the secondary environmental conditions that are likely to correlate with the instrument bias. These statistical learning methods are extremely flexible and permit the inclusion of nearly an infinite number of correlates in finding the best bias correction solution.
 
 Status
 ----------
-  The paper is in press. Comments, questions, and suggestions are welcome and warmly appreciated. Please email me at bloose@uri.edu.
+The paper is in press. Comments, questions, and suggestions are welcome and warmly appreciated. Please email me at bloose@uri.edu.
+
 Code
 ----
 Coding performed in Python.  The GAM backfit algorithm was used for the iterative fit.  The LSTM RNN model was implemented using the Keras interface to Tensorflow.
